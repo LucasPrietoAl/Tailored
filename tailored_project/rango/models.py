@@ -36,6 +36,6 @@ class Item(models.Model):
     category = models.ForeignKey(Category)
     itemName = models.CharField(max_length = 128)
     price = models.IntegerField(default = 0)
-
+ 
     def __str__(self):
         return self.itemName
